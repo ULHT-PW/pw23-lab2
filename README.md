@@ -14,7 +14,7 @@
 * Deve ter concluído o lab1
 * VS Code com a extensão live server. Permitir-lhe-á visualizar a página, à medida que for editando. Basta clicar, no canto inferior direito, em `Go live`.
 * Utilize `Shift+Alt+F` para indentar código
-* Reveja se necessário os slides da aula prática
+* Reveja se necessário os slides da aula teórica disponiveis no Moodle. É a fazer que aprenderá!
 * Deverá ter instalado o git no seu computador.
 
 # 1. Repo GitHub 
@@ -126,9 +126,9 @@ Para a definição dos estilos será usado um único ficheiro estilos.css, que g
 
 1. crie o ficheiro estilos.css 
  
-2. deverá utilizar todos os tipos de seletores (tipo, classe, id, atributo, pseudo-classe, pseudo-elemento, veja o [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.4-css-e-seus-seletores.pdf) 17), em pelo menos 3 sítios diferentes do seu HTML. A seguir sugere-se onde utilizar alguns destes. Não se esqueça de registar na tabela onde os utiliza!
+2. deverá utilizar todos os tipos de seletores (tipo, classe, id, atributo, pseudo-classe, pseudo-elemento, veja o slide 17 do PPT dos selectores), em pelo menos 3 sítios diferentes do seu HTML. A seguir sugere-se onde utilizar alguns destes. Não se esqueça de registar na tabela onde os utiliza!
  
-3. Deverá utilizar pelo menos três composições de selectores (descendentes, filhos `>`, adjacentes `~`, imediatamente adjacentes `+`, agrupados `,`), veja o [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.4-css-e-seus-seletores.pdf) 32). 
+3. Deverá utilizar pelo menos três composições de selectores (descendentes, filhos `>`, adjacentes `~`, imediatamente adjacentes `+`, agrupados `,`), veja o slide 32). 
 
 5. Escolha e use uma [fonte Google](https://fonts.google.com/) no o seu website. Veja no [video](https://lh3.googleusercontent.com/-PO1uxMdsqoA/Xpmn6QDUKHI/AAAAAAAA2qg/l1B6uSjPRu0eg_3EZkjp04siUjJb1dQxQCK8BGAsYHg/s0/2020-04-17.gif) como se procede:
     1. escolha uma fonte que gosta
@@ -140,7 +140,7 @@ Para a definição dos estilos será usado um único ficheiro estilos.css, que g
 6. Configure a cor de background do seu website, assim como de alguns elementos HTML5 usando seletores adequados. em particular, na pagina do Quizz, use cores diferentes para o fundo de cada umdos `fieldsets`.
  
 7. Para os elementos do seu menu:
-    * utilize selectores de pseudo-classe (`link`, `visited`, `hover`, `active`) para configurar cores para os links (veja o [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.4-css-e-seus-seletores.pdf) 27)
+    * utilize selectores de pseudo-classe (`link`, `visited`, `hover`, `active`) para configurar cores para os links (veja o slide 27)
     * especifique com selectores `before` e `after` (slide 31) efeitos que acontecem quando passa com o rato por cima de cada elemento do menu (use `hover`). 
     * No HTML inclua, antes de cada palavra do menu, um icon adequado premindo no teclado em `Windows + .` (pode escolher por exemplo 🏡 para home, 📷 para multimédia,🗺 localizaçao, etc). Pode também explorar [aqui](https://www.w3schools.com/icons/icons_reference.asp) ícones Google, Awesome Font ou Bootstrap; clique em "try" para entender como se usam:
        * deve incluir no elemento head um link ao repositório de icons. 
@@ -156,7 +156,6 @@ Para a definição dos estilos será usado um único ficheiro estilos.css, que g
  
 13. estilize as molduras (border) das imagens e iframes usando seletores, sem recorrer a classes.
  
-
 # 6. Menu
 Garanta que o menu inclui hiperlinks para as 2 novas páginas criadas (semelhante a todas as páginas).
 
@@ -198,7 +197,7 @@ Na página `info.html`:
 6. Clique no seu dominio. O seu site está online 🥳
     
  
-# 10. Fim 🎉
+# 9. Fim 🎉
 
 Submeta o domínio da sua aplicação no Moodle até à sua próxima aula prática
 
