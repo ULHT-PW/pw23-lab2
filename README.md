@@ -18,114 +18,147 @@
 * Deverá ter instalado o git no seu computador.
 
 # 1. Repo GitHub 
-1. Crie um repo no GitHub
+1. Crie um repositório no GitHub com nome seu numero de aluno
 2. Numa consola do PYthonAnywhere crie, na pasta onde está o manage.py, um repositorio git
-
-
-1. Clone (descarregue uma cópia) do GitHub para o seu computador o seu repositório com os laboratórios de Programação Web do GitHub:
+3. dê push do projeto que está no PythonAnyWhere para o GitHub. PAra tal, siga as instruções no GitHub. 
+4. Clone (descarregue uma cópia) do GitHub para o seu computador, ficando com uma cópia do que tem até agora feito no PythonAnyWhere:
     1. abra um processador de comandos (prima a tecla Windows e escreva `cmd` ou `Powershell`)
     2. escolha a pasta onde quer colocar o repositório (navegando com o comando `cd nome-de-pasta` para entrar numa determinada pasta)
     3. clone o seu repositório com o comando:
     ```bash
-    > git clone https://github/seuUserName/pw-labs-nomeapelido-numero
+    > git clone https://github/seuUserName/nome_do_repo .
     ```
 
-# 2. A minha primeira página HTML 😀 
+# 2. Nova estrutura das páginas
 
-Fará neste laboratório um website sobre uma cidade do mundo à sua escolha que goste. Deverá congregar várias informações sobre esta conforme indicado ao longo do laboratório. 
+1. Todas as suas páginas HTML deverão ser reestruturadas para integrar com elementos semânticos HTML5. No `body` deverá ter:
 
-1. crie uma pasta `lab1` e abra-a com o VSCode.  
+    1. dentro de um elemento `header` deverá incluir o cabeçalho, com o titulo do site e fotografia 
+    
+    3. o menu de navegação deverá estar dentro dum elemento `nav`
+    
+    5. o conteúdo dentro de um elemento `main`. Dentro do `main`, use elementos `section` caso existam várias secções (cada elemento `section` deverá ter dentro um elemento `h1` ou outro, e parágrafos `p`). Por exemplo, na página multimedia.html, utilize elementos `section` para dividir os vários conteúdos que tem (fotos, video e poema).
+    
+    7. um novo elemento `footer` com o seu nome, numero, universidade, e ano, tudo numa linha.
+    
+3. Nas imagens, vídeos e mapa, recorra a elemento `figure` e `figcaption`, tendo neste ultimo um elemento `details` para mostrar/esconder mais detalhes sobre a imagem.
 
-2. crie o ficheiro `index.html`, inserindo as seguintes partes elementares de qualquer ficheiro HTML:
+Se visualizar no seu navegador as páginas HTML, verá que estes elementos nada mudaram em termos visuais. No entanto, estes permitirão aplicar estilos. Neste primeiro laboratório aplicará a esta estrutura estilizações simples. No entanto, no lab4 esta estruturação com elementos semânticos permitirá criar layouts dinâmicos, configurados pelo CSS.
 
-![image](https://user-images.githubusercontent.com/42048382/218617086-1675ad42-c35a-4ee3-aabb-0be3e40218bb.png)
 
-3. Dentro do elemento `<head>` insira os seguintes elementos:
-    1. `<title>`, com o nome da cidade escolhida, que especificaráo título da barra do navegador. 
-    2. `<meta charset="utf-8">`, metadado (meta) que especifica que a página utiliza UTF-8 como codificação de carateres, em vez de ASCII. Isso permite inserir emojis e carateres não ASCII tipo ç, ã, õ. 
-    3. nome do autor do site, descrição do conteudo do site, e palavras chave: 
-        * `<meta name="author" content="Ana Maria">`
-        * `<meta name="description" content="Website sobre Lisboa">`
-        * `<meta name="keywords" content="palavras chave">`
+# 3. Página com Quizz 🤓
 
-4. No corpo principal, `<body>`: 
-    1.	insira um elemento `<h1>` com o nome da cidade.
-    2.	Procure no Google uma imagem que goste da cidade. 
-    3. Edite-a com o Paint. Redimensione-a proporcionalmente para que tenha 300px de largura. 
-    3. Guarde a imagem numa nova pasta `images`. 
-    4. Insira a imagem usando a etiqueta `<img>`. Especifique no atributo `src` o caminho até ao ficheiro.
-    5.	Insira, depois da imagem, uma quebra de linha, elemento `<br>`, pois o elemento `<img>` não introduz uma quebra de linha.
-    6. Insira por baixo um titulo `<h2>` com a palavra Introdução 
-    7. Escreva uma frase sobre a cidade.
+1. Crie uma nova página HTML `quizz.html` que tenha o mesmo cabeçalho das restantes.
 
- ![image](https://user-images.githubusercontent.com/42048382/218616647-c7377b2e-e9d3-48de-8310-8eb047647970.png)
+1. Esta página irá ter um formulário com um quizz sobre a cidade. Deverá fazer perguntas de vários tipos sobre a cidade, o formulário sendo enviado para um endereço de email (quando desenvolvermos o back-end, poderá processar os dados enviados e apresentar ao utilizador uma resposta). Nesta página irá experimentar todos os tipos de entrada que foram falados na aula. Implemente os passos a seguir descritos.
+
+1. Insira um elemento h3 com a palavra Quizz.
+
+3. insira um parágrafo com um texto introdutório a explicar que nesta página será feito um quizz para testar se o utilizador conhece bem a cidade que a página apresenta.
+
+1. Crie dentro do form um elemento `fieldset`, coma uma legenda (por exemplo, "Quizz sobre «cidade»", "City quizz", "Mostre que conhece «cidade»"
+
+1. Crie outro elemento `fieldset` para inserção de dados pessoais, com o titulo "info" (`fieldset` dentro de `fieldset`, sim 🤩!):
+   * Nome
+   * apelido
+   * email (input de tipo email)
+
+1. Crie outro elemento `fieldset` para inserção das perguntas do quizz, com título "perguntas":
+
+1. Crie um quiz com perguntas sobre a cidade, explorando de forma imaginativa elementos input. 
+    * Deverá utilizar cada um dos seguintes tipos (atributo `type`):
+        * `text`
+        * `radio`
+        * `checkbox`
+        * `date`
+        * `image`
+        * `color`
+        * `number`
+        * `range`
  
-A sua página está pronta!   
-1. visualize a sua pagina, clicando diretamente no ficheiro HTML na pasta. O seu browser abrirá e renderizará a página.
-2. visualize a sua pagina, clicando no canto inferionr direito em "Go live". Deixe sempre aberto. Todas as alterações que for  fazendo serão automaticamente refrescadas.
-    
-Está ligeiramente diferente da imagem a cima, pois falta inserir os hiperlinks.
+    * Deverá garantir que utiliza pelo menos uma vez cada um dos seguintes atributos:
+        * `value`
+        * `placeholder`
+        * `autocomplete`
+        * `size`
+        * `max` e `min`
+        * `maxlength`
+        * `form`
+        * `multiple`
+        * `autofocus`
+        * `required`
+        * `pattern`
 
-# 3. Mais páginas para o meu website! 🥳
+1. Inclua também perguntas usando os seguintes elementos:
+   * `select`
+   * `datalist`
+   * `label`
 
-Irá agora criar várias páginas interligadas, como no [slides 15](https://github.com/ULHT-PW/pw23-lab1/files/10727143/pw-lab1.pdf#page=15) da aula prática.
+1. Inclua  um elemento `textarea` para inserir um comentário
 
-1. Crie o menu depois da imagem e etiqueta `<br>`. Num `<p>` coloque 4 hiperlinks `<a>` para as páginas do seu site: Introdução, Localização, Multimédia, Informações. 
+1. Inclua um elemento do tipo `submit` para submeter o seu formulário.
 
-![image](https://user-images.githubusercontent.com/42048382/218616401-14dcee38-e524-42bd-ad50-773df147a1be.png)
+1. No marcador form, inclua os seguintes atributos `<form method="POST" action="mailto: seuemail@gmail.com" enctype="multipart/form-data">`. Assim, quem abrir a sua página, ao submeter o formulário enviará por email para si este.  
+   * Quando desenvolvermos o back-end, poderá processar os dados enviados e apresentar ao utilizador uma resposta.
 
+ 
+# 4. Página HTML5 & CSS 😎
 
-2.	Crie 4 copias do ficheiro index.html que criou. 
-3.	Altere os nomes dos ficheiros para ter os seguintes: index.html, local.html, multimedia.html, info.html (atenção que os nomes dos ficheiros HTML  deverão estar em minúsculas, sem espaços, acentos ou carateres especiais)
-4.	Em cada ficheiro, no menu, ponha a negrito a palavra a que corresponde a página. Para pôr a negrito colocque a etiqueta `b`em volta do hiperlink devido.
-5. Adeque o título `<h3>Introdução</h3>` ao nome da página.
-6. Abra o ficheiro index, e verifique que os hiperlinks funcionam. 
-Tem agora criado o seu website! Agora irá preencher cada página com conteúdos.
-    
-# 4. Site online em 10 passos! ☁
+1. Crie uma nova página HTML intitulada `html5-css.html` que tenha o mesmo cabeçalho das restantes.
+ 
+2. Insira um elemento `h3` com o título HTML5 e CSS. Esta página terá 3 secções, estruturadas com elementos `section`, onde cada uma terá um breve texto e uma tabela. 
+ 
+3. Crie uma secção com o elemento intitulada HTML 5 onde deverá incluir:
+    1. uma frase introdutória sobre o HTML5
+    2. um tabela com 3 colunas:
+       * na primeira coluna, os elementos semânticos HTML5 apresentados na aula, um por linha. 
+       * na segunda coluna, para cada elemento HTML5 deverá indicar se o usou ou não nalguma página, recorrendo a um icon adequado (use icones Google, por exemplo ❌ e ✔, ou então 😀 e 🙄)
+       * na terceira coluna deverá incluir uma breve descrição a explicar onde utilizou. 
+ 
+4. Crie uma subsecção intitulada CSS onde deverá incluir:
+    1. uma frase introdutória sobre CSS 
+    2. uma tabela com todos os tipos de seletores CSS, um por linha. Na segunda coluna deverá indicar se o usou ou não nalguma página, recorrendo a um icon adequado (use os icones Google), e na terceira coluna deverá incluir um breve comentário a explicar como este funciona e onde o utilizou. 
+    3. uma tabela com todos os combinadores de seletores apresentados na aula, um por linha. Na segunda coluna deverá indicar se o usou ou não nalguma página, recorrendo a um icon adequado (use os icones Google), e na terceira coluna deverá incluir um breve comentário a explicar como este funciona e onde o utilizou.
 
-1. Crie uma conta em [www.pythonanywhere.com](https://www.pythonanywhere.com/). O username que escolher será o nome do seu dominio (username.pythonanywhere.com). 
-![image](https://user-images.githubusercontent.com/42048382/218605220-87f17a31-df30-45c9-941a-812145bcbfd7.png)
-2. No menu superior, clique em "Web" e depois em  "Add a new web app"
-3. Clique em "Manual configuration"
-4. Escolha "Python 3.10"
-5. No menu superior, clique em "Files"
-6. crie uma pasta intitulada "web"
-7. Carregue nessa pasta todos os ficheiros do seu website
-8. No menu superior, clique em "Web"
-9. No separador Static, especifique em URL  `/`, e em Directory o caminho até à sua pasta web
-10. Clique no botão verde "Reload ...."
-11. Clique no seu dominio. O seu site está online 🥳
-    
-Continue a editar no VS Code o seu website. No final, carregará os ficheiros finalizados. 
-    
-# 5. Página Introdução 🏕
+# 5. Estilização com CSS 🖌
 
-Na pagina `index.html` insira, por debaixo da frase que escreveu sobre a cidade crie:
+Para a definição dos estilos será usado um único ficheiro estilos.css, que guardará todos os estilos usados nas páginas. Em cada ficheiro HTML deverá existir um link para este ficheiro, de modo a permitir usar os estilos.
 
-1. De seguida, num novo parágrafo `<p>` apresente o seu website, criando uma lista não numerada com a etiqueta `<ol>` e várias linhas `<li>`. Em cada linha apresente cada página do seu site em poucas palavras, incluindo numa palavra chave um link para essa página, com o elemento `<a>`.
+1. crie o ficheiro estilos.css 
+ 
+2. deverá utilizar todos os tipos de seletores (tipo, classe, id, atributo, pseudo-classe, pseudo-elemento, veja o [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.4-css-e-seus-seletores.pdf) 17), em pelo menos 3 sítios diferentes do seu HTML. A seguir sugere-se onde utilizar alguns destes. Não se esqueça de registar na tabela onde os utiliza!
+ 
+3. Deverá utilizar pelo menos três composições de selectores (descendentes, filhos `>`, adjacentes `~`, imediatamente adjacentes `+`, agrupados `,`), veja o [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.4-css-e-seus-seletores.pdf) 32). 
 
-2. Crie uma [wordcloud](https://www.wordclouds.com/) com base em palavras que associa à cidade. 
-    1. Clique em wordlist e Edit, prima no botão para apagar as palavras existentes.
-    2. Adicione palavras que estejam associadas à cidade. 
-    3. Ponha peso 10 no nome da cidade para que esta fique com maior destaque. 
-    4. Pode escolher uma forma (shape), fonte (font), cores (use um fundo branco). 
-    5. Descarregue a imagem, e formate-a com o Paint por forma a que tenha largura de 300px como a fotografia da cidade. 
-    6. Guarde a imagem na pasta `/images`
-    6. Insira-a como uma `<img>` por debaixo da lista.
+5. Escolha e use uma [fonte Google](https://fonts.google.com/) no o seu website. Veja no [video](https://lh3.googleusercontent.com/-PO1uxMdsqoA/Xpmn6QDUKHI/AAAAAAAA2qg/l1B6uSjPRu0eg_3EZkjp04siUjJb1dQxQCK8BGAsYHg/s0/2020-04-17.gif) como se procede:
+    1. escolha uma fonte que gosta
+    2. selecione os estilo que quer usar (no caso de apresentar várias variantes)
+    3. copie na janela direita o link e insira no head de cada uma das suas páginas HTML
+    4. especifique no ficheiro CSS que quer usar essa fonte em todo o lado, usando o seletor universal * e a regra CSS para especificar a familia da fonte, por exemplo 
+`* {font-family: 'Syne Mono', monospace;} `
+ 
+6. Configure a cor de background do seu website, assim como de alguns elementos HTML5 usando seletores adequados. em particular, na pagina do Quizz, use cores diferentes para o fundo de cada umdos `fieldsets`.
+ 
+7. Para os elementos do seu menu:
+    * utilize selectores de pseudo-classe (`link`, `visited`, `hover`, `active`) para configurar cores para os links (veja o [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.4-css-e-seus-seletores.pdf) 27)
+    * especifique com selectores `before` e `after` (slide 31) efeitos que acontecem quando passa com o rato por cima de cada elemento do menu (use `hover`). 
+    * No HTML inclua, antes de cada palavra do menu, um icon adequado premindo no teclado em `Windows + .` (pode escolher por exemplo 🏡 para home, 📷 para multimédia,🗺 localizaçao, etc). Pode também explorar [aqui](https://www.w3schools.com/icons/icons_reference.asp) ícones Google, Awesome Font ou Bootstrap; clique em "try" para entender como se usam:
+       * deve incluir no elemento head um link ao repositório de icons. 
+       * veja como se especifica o icon que pretende inserir (depende do repositório). Estes icones são extremamente leves e variados.
 
-# 6. Página Localização 🗺
+8. Nas tabelas e no poema os selectores de pseudo-classe assim como os pseudo-elementos, explorando cores de fonte e fundos diferentes. Por exemplo, introduza variedades de cor nas linhas pares e impares das tabelas.
+  
+9. Recorra a seletores de atributo (slide 25) para configurar as cores e larguras das molduras em redor das imagens da página interesses.
+ 
+10. No texto descritivo (por exemplo no parágrafo da introdução), use os pseudo-elementos first-letter, first-line para estilizá-lo.
+ 
+11. nos seus formulários, remova o uso de quebras de linha `br` para colocar inputs em linhas diferentes. Em vez disso, transforme os elementos `input` em blocos através da propriedade `display`. 
+ 
+13. estilize as molduras (border) das imagens e iframes usando seletores, sem recorrer a classes.
+ 
 
-Na página `local.html`:
-1. Insira um pequeno parágrafo que descreva a localização da ciadade (continente, país), assim como algumas informações geográficas destas.
-2.	Insira por baixo um mapa do Google Maps do lugar. Para tal: 
-    a. procure a cidade no website www.google.pt/maps
-    b. Faça um zoom que considera apropriado
-    c. clique em “partilhar” e na opção “incorporar mapa” 
-    d. Selecione tamanho pequeno
-    e. copie o código HTML resultante, `<iframe src=… >`
-    f. insira esse código HTML na sua pagina HTML
-    g. acerte a dimensão da janela.
+# 6. Menu
+Garanta que o menu inclui hiperlinks para as 2 novas páginas criadas (semelhante a todas as páginas).
 
 
 # 7. Página Multimédia 🎬
@@ -154,16 +187,20 @@ Na página `info.html`:
 
 # 9. Site atualizado online!
 
-1. Na aplicação [pythonanywhere](https://www.pythonanywhere.com/), clique em "Files"
-7. Carregue pasta todos os ficheiros do seu website, pois muitos foram modificados
-8. No menu superior, clique em "Web"
-9. Clique no botão verde "Reload ...."
-10. Clique no seu dominio. O seu site está online 🥳
+1. Depois de verificar que tudo está operaciona, vamos enviar o seu projeto para o GitHuB e para o PythonAnyWhere.
+2. Primeiro, envie para o GitHub com os comandos:
+   * `git add .`
+   * `git commit -m "lab2"`
+   * `git push`
+3. Depois, duma consola do PythonAnywhere (Console Bash), descarregue o seu projeto atualizado do GitHub com o comando  `git pull`
+4. No menu superior, clique em "Web"
+5. Clique no botão verde "Reload ...." para ativar as alterações
+6. Clique no seu dominio. O seu site está online 🥳
     
  
 # 10. Fim 🎉
 
 Submeta o domínio da sua aplicação no Moodle até à sua próxima aula prática
 
-Esperamos que tenha gostado de aplicar os conhecimentos de HTML fazendo um primeiro website &#127760;!
+Esperamos que tenha gostado de aplicar os conhecimentos de HTML5 e CSS no seu website &#127760;!
 
