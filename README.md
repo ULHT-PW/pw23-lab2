@@ -18,9 +18,11 @@
 * Deverá ter instalado o git no seu computador.
 
 # 1. Repo GitHub 
-1. Crie um repositório no GitHub com nome seu numero de aluno
+1. Crie um repositório no GitHub com nome <numeroAluno-pw-labs>
 2. Numa consola do PYthonAnywhere crie, na pasta onde está o manage.py, um repositorio git
-3. dê push do projeto que está no PythonAnyWhere para o GitHub. PAra tal, siga as instruções no GitHub. 
+3. Vamos agora enviar o projeto do PythonAnywhere para o seu novo repositorio. Dê push do projeto que está no PythonAnyWhere para o GitHub. PAra tal, siga as instruções no GitHub. 
+![image](https://user-images.githubusercontent.com/42048382/220575109-9b9eb33c-c0af-41a2-b2ef-59e458c8a9ba.png)
+
 4. Clone (descarregue uma cópia) do GitHub para o seu computador, ficando com uma cópia do que tem até agora feito no PythonAnyWhere:
     1. abra um processador de comandos (prima a tecla Windows e escreva `cmd` ou `Powershell`)
     2. escolha a pasta onde quer colocar o repositório (navegando com o comando `cd nome-de-pasta` para entrar numa determinada pasta)
