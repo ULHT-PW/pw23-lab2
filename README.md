@@ -19,13 +19,16 @@
 
 # 1. Repo GitHub 
 1. Crie um repositório no GitHub com nome <numeroAluno-pw-labs>
-2. Numa consola do PYthonAnywhere crie, na pasta onde está o manage.py, um repositorio git:
+2. Abra uma consola do PythonAnywhere e crie, dentro da pasta `web`, um repositorio git e sincronize-o com o GitHub:
    ```Bash
    > git init .
    > git add .
    > git commit -m "o meu lab1"
-   
+   > git branch -M main
+   > git remote add origin https://github.com/axxxxxx-pw/<numeroAluno>-pw-lab2
+   > git push -u origin main
    ```
+   
 3. Vamos agora enviar o projeto do PythonAnywhere para o seu novo repositorio. Dê push do projeto que está no PythonAnyWhere para o GitHub. PAra tal, siga as instruções no GitHub. 
 ![image](https://user-images.githubusercontent.com/42048382/220575109-9b9eb33c-c0af-41a2-b2ef-59e458c8a9ba.png)
 
