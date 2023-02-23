@@ -58,7 +58,7 @@ Consdideremos que tem o projeto no PythonAnywhere e esta num novo PC. Vamos sinc
 
 Se visualizar no seu navegador as páginas HTML, verá que estes elementos nada mudaram em termos visuais. No entanto, estes permitirão aplicar estilos. Neste primeiro laboratório aplicará a esta estrutura estilizações simples. No entanto, no lab4 esta estruturação com elementos semânticos permitirá criar layouts dinâmicos, configurados pelo CSS.
 
-<img src="https://user-images.githubusercontent.com/42048382/221049722-7c76dad0-8251-4b56-9f08-49b18f09b77b.png" width="200px">
+<img src="https://user-images.githubusercontent.com/42048382/221050105-d8db51a6-7e51-4a2d-9a4a-09871035f87e.png" width="200px">
 
 # 3. Página com Quizz 🤓
 
