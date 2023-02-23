@@ -18,6 +18,9 @@
 * Deverá ter instalado o git no seu computador.
 
 # 1. Repo GitHub 
+
+Consdideremos que tem o projeto no PythonAnywhere e esta num novo PC. Vamos sincronizar o projeto no PythonAnyWhere com o GitHub e posteriormente com o PC. Veja este [repo para mais detalhes](https://github.com/ULHT-PW).
+
 1. Crie um repositório no GitHub com nome <numeroAluno-pw-labs>
 2. Abra uma consola do PythonAnywhere e crie, dentro da pasta `web`, um repositorio git e sincronize-o com o GitHub:
    ```Bash
