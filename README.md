@@ -19,8 +19,11 @@
 
 # 1. [Git](https://github.com/ULHT-PW/git) para sincronizar **PythonAnyWhere &rarr; GitHub &rarr; PC**  
 
-Consdideremos que tem o projeto no PythonAnywhere e está num PC da escola sem o seu projeto. Vamos criar um repositorio no PythonAnywhere, e sincronizar  **PythonAnyWhere &rarr; GitHub &rarr; PC**.
+Consdideremos que tem o projeto no PythonAnywhere e está num PC da escola sem o seu projeto. Vamos 
+1. criar um repositorio no PythonAnywhere
+2. sincronizar o repositorio **PythonAnyWhere &rarr; GitHub &rarr; PC**, obtendo uma cópia no seu PC para trabalhar nele
 
+Para tal:
 1. Crie um repositório no GitHub com nome pw-labs
 2. Abra uma consola do PythonAnywhere e crie, dentro da pasta `web`, um repositorio git e sincronize-o com o GitHub:
    ```Bash
