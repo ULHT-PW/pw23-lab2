@@ -21,14 +21,14 @@
 
 Consdideremos que tem o projeto no PythonAnywhere e está num PC da escola sem o seu projeto. Vamos criar um repositorio no PythonAnywhere, e sincronizar  **PythonAnyWhere &rarr; GitHub &rarr; PC**.
 
-1. Crie um repositório no GitHub com nome <numeroAluno-pw-labs>
+1. Crie um repositório no GitHub com nome pw-labs
 2. Abra uma consola do PythonAnywhere e crie, dentro da pasta `web`, um repositorio git e sincronize-o com o GitHub:
    ```Bash
    > git init .
    > git add .
    > git commit -m "o meu lab1"
    > git branch -M main
-   > git remote add origin https://github.com/axxxxxx-pw/<numeroAluno>-pw-lab2
+   > git remote add origin https://github.com/<seu-username-no-github>/pw-labs
    > git push -u origin main
    ```
    
