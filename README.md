@@ -17,9 +17,9 @@
 * Reveja se necessário os slides da aula teórica disponiveis no Moodle. É a fazer que aprenderá!
 * Deverá ter instalado o git no seu computador.
 
-# 1. Repo GitHub 
+# 1. [Git](https://github.com/ULHT-PW/git) para sincronizar **PythonAnyWhere &rarr; GitHub &rarr; PC**  
 
-Consdideremos que tem o projeto no PythonAnywhere e esta num novo PC. Vamos sincronizar o projeto no PythonAnyWhere com o GitHub e posteriormente com o PC. Veja este [repo para mais detalhes](https://github.com/ULHT-PW).
+Consdideremos que tem o projeto no PythonAnywhere e está num PC da escola sem o seu projeto. Vamos criar um repositorio no PythonAnywhere, e sincronizar  **PythonAnyWhere &rarr; GitHub &rarr; PC**.
 
 1. Crie um repositório no GitHub com nome <numeroAluno-pw-labs>
 2. Abra uma consola do PythonAnywhere e crie, dentro da pasta `web`, um repositorio git e sincronize-o com o GitHub:
