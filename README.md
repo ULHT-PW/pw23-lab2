@@ -16,8 +16,11 @@
 * Utilize `Shift+Alt+F` para indentar código
 * Reveja se necessário os slides da aula teórica disponiveis no Moodle. É a fazer que aprenderá!
 * Deverá ter instalado o git no seu computador.
+* Deverá ter lido a página sobre [Git](https://github.com/ULHT-PW/git)
 
 # 1. [Git](https://github.com/ULHT-PW/git) para sincronizar **PythonAnyWhere &rarr; GitHub &rarr; PC**  
+
+Leia primeiro a página sobre [Git](https://github.com/ULHT-PW/git)!
 
 Consdideremos que tem o projeto no PythonAnywhere e está num PC da escola sem o seu projeto. Vamos 
 1. criar um repositorio no PythonAnywhere
